@@ -1,12 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions are similar to the makeVector and cachemean functions in the assignment. 
+## The major difference is in the function used to calculate the mean.
+## I replaced it with the solve function to calculate the inverse of the square matrix.
 
-## Write a short comment describing this function
-
-## These functions are similar to the makeVector and cachemean. 
-## The major difference is in the function used to calculate the mean
-## I replace it with solve to calculate the inverse of the matrix
-
+## This function make a cache for the matrix inverse 
 makeCacheMatrix <- function(x = matrix()) {
   
   ##This function create a matrix (square matrix) and perform the following
@@ -30,7 +26,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function check for the matrix inverse if it was calculated using makeCacheMatrix, 
+## and if not then it calculate it.
 
 cacheSolve <- function(x, ...) {
   
